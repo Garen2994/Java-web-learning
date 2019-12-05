@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--给图片和超链接加单击事件-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <script>
+        /*javascript 响应单击 运行换图片的脚本*/
+       window.onload =function f() {
+           //1.获取图片对象
+           var img = document.getElementById("checkCode");
+           //绑定单击事件
+           img.onclick = function () {
+               //加一个不重复的时间戳
+               var date = new Date().getTime();
+               img.src="/1129/ResponseServlet04?" + date; //到毫秒
+               println("hahaha");
+           }
+       }
+    </script>
+</head>
+
+<body>
+    <img id="checkCode" src="/1129/ResponseServlet04"/><br>
+    <a id = "change" href="">看不清?换一张</a>
+</body>
+</html>

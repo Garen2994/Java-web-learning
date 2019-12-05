@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--用户登录案例需求：
+1.编写login.html登录页面
+	username & password 两个输入框
+2.使用dbcp数据库连接池技术,操作mysql数据库中user表
+3.使用JdbcTemplate技术封装JDBC
+4.登录成功跳转到SuccessServlet展示：登录成功！用户名,欢迎您
+5.登录失败跳转到FailServlet展示：登录失败，用户名或密码错误-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/1129/LoginServlet" method="post">
+        用户名:<input type="text" name="username"> <br>
+        密码:  <input type="text" name="password"> <br>
+
+        <input type="submit" value="登录">
+
+    </form>
+</body>
+</html>
