@@ -20,12 +20,11 @@
 </head>
 <body>
 
-
-  <div >${user.name},欢迎您</div>
   <div align="center">
+    <a style="text-decoration:none;font-size:20px">欢迎您,</a>
     <a
-            href="${pageContext.request.contextPath}/UserListServlet"
-            style="text-decoration:none;font-size:33px">查询所有用户信息
+            href="${pageContext.request.contextPath}/login.jsp"
+            style="text-decoration:none;font-size:20px">请点击此处登录
     </a>
   </div>
 

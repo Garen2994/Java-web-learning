@@ -14,5 +14,7 @@ public interface UserService {
      * @description 查询所有用户信息
      * @return
      */
+    public User login(User loginUser);
     public List<User> findAll();
+    public void addUser(User user);
 }

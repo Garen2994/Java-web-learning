@@ -25,8 +25,8 @@
 </head>
 <body>
 <div class="container">
-    <center><h3>添加联系人页面</h3></center>
-    <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
+    <center><h3>添加用户页面</h3></center>
+    <form action="${pageContext.request.contextPath}/AddUserServlet" method="post">
         <div class="form-group">
             <label for="name">姓名：</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名">
@@ -46,9 +46,12 @@
         <div class="form-group">
             <label for="address">籍贯：</label>
             <select name="address" class="form-control" id="address">
-                <option value="陕西">陕西</option>
-                <option value="北京">北京</option>
-                <option value="上海">上海</option>
+                <option value="中国大陆">中国大陆</option>
+                <option value="中国香港">中国香港</option>
+                <option value="中国台北">中国台北</option>
+                <option value="日本">日本</option>
+                <option value="美国">美国</option>
+                <option value="英国">英国</option>
             </select>
         </div>
 

@@ -25,10 +25,22 @@ public class UserDaoTest {
 
     @Test
     public void findByNameTest(){
-//        User user = new User();
-//        user.setName("Ariana");
-//        User res = dao.findByName(user);
-        User res = dao.findByName("Ariana");
+        User user = new User();
+        user.setUsername("ariana123");
+        user.setPassword("arianagrande");
+        User res = dao.findByNameAndPassword(user);
         System.out.println(res.toString());
+    }
+    @Test
+    public void addTest(){
+        User user = new User();
+        user.setName("Garen");
+        user.setGender("女");
+        user.setAge(23);
+        user.setAddress("英国");
+        user.setQq("1721864383");
+        user.setEmail("garen2994@hotmail.com");
+        UserDao dao = new UserDaoImpl();
+        dao.add(user);
     }
 }

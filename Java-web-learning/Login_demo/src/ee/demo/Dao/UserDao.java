@@ -13,6 +13,6 @@ import java.util.List;
 public interface UserDao {
 
     public List<User> findAll();
-    public User findByName(String name);
-
+    public User findByNameAndPassword(User loginUser);
+    public void add(User user);
 }

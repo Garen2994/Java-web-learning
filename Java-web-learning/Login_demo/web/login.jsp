@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Garen
+  Date: 2019/12/11
+  Time: 15:24
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -6,7 +13,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>管理员登录</title>
+    <title>管理员登录页面</title>
 
     <!-- 1. 导入CSS的全局样式 -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,14 +28,14 @@
             var vcode = document.getElementById("vcode");
 
             //2.设置其src属性，加时间戳
-            vcode.src = "${pageContext.request.contextPath}/checkCodeServlet?time="+new Date().getTime();
+            vcode.src = "${pageContext.request.contextPath}/RandomCodeServlet?time="+new Date().getTime();
         }
     </script>
 </head>
 <body>
 <div class="container" style="width: 400px;">
     <h3 style="text-align: center;">管理员登录</h3>
-    <form action="${pageContext.request.contextPath}/loginServlet" method="post">
+    <form action="${pageContext.request.contextPath}/LoginProServlet" method="post">
         <div class="form-group">
             <label for="user">用户名：</label>
             <input type="text" name="username" class="form-control" id="user" placeholder="请输入用户名"/>
@@ -43,7 +50,7 @@
             <label for="vcode">验证码：</label>
             <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码" style="width: 120px;"/>
             <a href="javascript:refreshCode();">
-                <img src="${pageContext.request.contextPath}/checkCodeServlet" title="看不清点击刷新" id="vcode"/>
+                <img src="${pageContext.request.contextPath}/RandomCodeServlet" title="看不清点击刷新" id="vcode"/>
             </a>
         </div>
         <hr/>
