@@ -17,4 +17,7 @@ public interface UserService {
     public User login(User loginUser);
     public List<User> findAll();
     public void addUser(User user);
+    public void deleteUser(String id);
+    public User findUserById(String id);
+    public void updateUser(User user);
 }

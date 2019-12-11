@@ -29,4 +29,19 @@ public class UserServiceImpl implements UserService {
     public void addUser(User user) {
         dao.add(user);
     }
+
+    @Override
+    public void deleteUser(String id) {
+        dao.deleteById(Integer.parseInt(id));
+    }
+
+    @Override
+    public User findUserById(String id) {
+        return dao.findUserById(Integer.parseInt(id));
+    }
+
+    @Override
+    public void updateUser(User user) {
+       dao.update(user);
+    }
 }

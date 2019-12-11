@@ -43,4 +43,17 @@ public class UserDaoTest {
         UserDao dao = new UserDaoImpl();
         dao.add(user);
     }
+    @Test
+    public void deleteByIdTest(){
+        int id = 6;
+        UserDao dao = new UserDaoImpl();
+        dao.deleteById(id);
+    }
+    @Test
+    public void findUserByIdTest(){
+        int id = 2;
+        UserDao dao = new UserDaoImpl();
+        User user = dao.findUserById(id);
+        System.out.println(user.toString());
+    }
 }

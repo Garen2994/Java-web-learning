@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Garen
+  Date: 2019/12/10
+  Time: 15:15
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -27,6 +34,18 @@
             text-align: center;
         }
     </style>
+    <script>
+        //是否确认删除的询问---js
+        function deleteUser(id){
+            if(confirm("确定要删除这一项吗？")){
+                location.href="${pageContext.request.contextPath}/DeleteUserServlet?id="+id;
+            }
+        }
+        // window.onload = function() {
+        //     document.getElementById("delSelected")
+        //
+        // }
+    </script>
 </head>
 <body>
 <div class="container">
@@ -79,8 +98,9 @@
                     <td>${user.qq}</td>
                     <td>${user.email}</td>
                     <td>
-                        <a class="btn btn-default btn-sm" href="update.html">修改</a>&nbsp;
-                        <a class="btn btn-default btn-sm" href="">删除</a>
+                        <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/FindUserServlet?id=${user.id}">修改
+                        </a>&nbsp;
+                        <a class="btn btn-default btn-sm" href="javascript:deleteUser(${user.id});">删除</a>
                     </td>
                 </tr>
             </c:forEach>

@@ -18,8 +18,8 @@
     <body>
         <div class="container" style="width: 400px;">
         <h3 style="text-align: center;">修改联系人</h3>
-        <form action="${pageContext.request.contextPath}/updateUserServlet" method="post">
-            <!--  隐藏域 提交id-->
+        <form action="${pageContext.request.contextPath}/UpdateUserServlet" method="post">
+            <!--  隐藏域 提交id给UpdateUserServlet 以便根据id唯一标记查询数据-->
             <input type="hidden" name="id" value="${user.id}">
 
           <div class="form-group">
@@ -50,22 +50,57 @@
           <div class="form-group">
             <label for="address">籍贯：</label>
              <select name="address" id="address" class="form-control" >
-                 <c:if test="${user.address == '陕西'}">
-                    <option value="陕西" selected>陕西</option>
-                    <option value="北京">北京</option>
-                    <option value="上海">上海</option>
+                 <c:if test="${user.address == '美国'}">
+                    <option value="美国" selected>美国</option>
+                    <option value="中国大陆">中国大陆</option>
+                    <option value="英国">英国</option>
+                    <option value="日本">日本</option>
+                    <option value="中国香港">中国香港</option>
+                    <option value="中国台北">中国台北</option>
                  </c:if>
 
-                 <c:if test="${user.address == '北京'}">
-                     <option value="陕西" >陕西</option>
-                     <option value="北京" selected>北京</option>
-                     <option value="上海">上海</option>
+                 <c:if test="${user.address == '中国大陆'}">
+                     <option value="美国" selected>美国</option>
+                     <option value="中国大陆">中国大陆</option>
+                     <option value="英国">英国</option>
+                     <option value="日本">日本</option>
+                     <option value="中国香港">中国香港</option>
+                     <option value="中国台北">中国台北</option>
                  </c:if>
 
-                 <c:if test="${user.address == '上海'}">
-                     <option value="陕西" >陕西</option>
-                     <option value="北京">北京</option>
-                     <option value="上海" selected>上海</option>
+                 <c:if test="${user.address == '英国'}">
+                     <option value="美国" selected>美国</option>
+                     <option value="中国大陆">中国大陆</option>
+                     <option value="英国">英国</option>
+                     <option value="日本">日本</option>
+                     <option value="中国香港">中国香港</option>
+                     <option value="中国台北">中国台北</option>
+                 </c:if>
+
+                 <c:if test="${user.address == '日本'}">
+                     <option value="美国" selected>美国</option>
+                     <option value="中国大陆">中国大陆</option>
+                     <option value="英国">英国</option>
+                     <option value="日本">日本</option>
+                     <option value="中国香港">中国香港</option>
+                     <option value="中国台北">中国台北</option>
+                 </c:if>
+
+                 <c:if test="${user.address == '中国香港'}">
+                     <option value="美国" selected>美国</option>
+                     <option value="中国大陆">中国大陆</option>
+                     <option value="英国">英国</option>
+                     <option value="日本">日本</option>
+                     <option value="中国香港">中国香港</option>
+                     <option value="中国台北">中国台北</option>
+                 </c:if>
+                 <c:if test="${user.address == '中国台北'}">
+                     <option value="美国" selected>美国</option>
+                     <option value="中国大陆">中国大陆</option>
+                     <option value="英国">英国</option>
+                     <option value="日本">日本</option>
+                     <option value="中国香港">中国香港</option>
+                     <option value="中国台北">中国台北</option>
                  </c:if>
             </select>
           </div>

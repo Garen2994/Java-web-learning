@@ -6,24 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9a054b5-f365-47c6-a7aa-26c6d6f5750d" name="Default Changelist" comment=":star: practice updated">
-      <change afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/AddUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/LoginProServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/RandomCodeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login_demo/web/welcome.jsp" afterDir="false" />
+    <list default="true" id="e9a054b5-f365-47c6-a7aa-26c6d6f5750d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DeleteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/FindUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/UpdateUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DelSelectedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DelSelectedServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/web/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/web/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/web/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/web/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/image/01.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_demo/web/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_demo/web/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/web/update.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +34,129 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/web/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="112" column="38" lean-forward="true" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Login_demo/web/update.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/UpdateUserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="45" />
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-768">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,10 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo1/src/ee/demo/Request/RequestDemo1.java" />
-        <option value="$PROJECT_DIR$/demo1/src/ee/demo/Servlet/ServletDemo1.java" />
-        <option value="$PROJECT_DIR$/src/ee/web/Cookie/CookieDemo.java" />
-        <option value="$PROJECT_DIR$/src/ee/web/Cookie/CookieDemo2.java" />
         <option value="$PROJECT_DIR$/src/ee/web/Cookie/CookieDemo3.java" />
         <option value="$PROJECT_DIR$/src/ee/web/ServletContext/CookieOutDemo1.java" />
         <option value="$PROJECT_DIR$/demo1/src/ee/demo/Servlet/CookieOutDemo1.java" />
@@ -92,18 +208,23 @@
         <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/LoginDemoPro.java" />
         <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/RandomCodeServlet.java" />
         <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Domain/User.java" />
-        <option value="$PROJECT_DIR$/Login_demo/web/login.jsp" />
         <option value="$PROJECT_DIR$/Login_demo/web/index.jsp" />
         <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/LoginProServlet.java" />
-        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java" />
-        <option value="$PROJECT_DIR$/Login_demo/web/add.jsp" />
-        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/Login_demo/web/list.jsp" />
-        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/AddUserServlet.java" />
         <option value="$PROJECT_DIR$/Login_demo/web/welcome.jsp" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DelSelectedServlet.java" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DeleteUserServlet.java" />
+        <option value="$PROJECT_DIR$/Login_demo/web/add.jsp" />
+        <option value="$PROJECT_DIR$/Login_demo/web/login.jsp" />
+        <option value="$PROJECT_DIR$/Login_demo/web/list.jsp" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/FindUserServlet.java" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/Login_demo/web/update.jsp" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/UpdateUserServlet.java" />
       </list>
     </option>
   </component>
@@ -236,6 +357,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ee" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java-web-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-web-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="Login_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ee" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -245,7 +376,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ee" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java-web-learning" type="b2602c69:ProjectViewProjectNode" />
@@ -255,13 +387,19 @@
               <item name="ee" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="UserListServlet" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Java-web-learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java-web-learning" type="462c0819:PsiDirectoryNode" />
               <item name="Login_demo" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java-web-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-web-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="Login_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,7 +425,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26951396" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -322,22 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat_demo">
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Login_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ee.demo.Utils.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ee.demo.Utils.Test" />
-      <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserDaoTest.findUserByIdTest">
     <configuration name="UserDaoTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Login_demo" />
       <extension name="coverage">
@@ -349,6 +472,54 @@
       <option name="PACKAGE_NAME" value="ee.demo.Utils.Test" />
       <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserDaoTest" />
       <option name="METHOD_NAME" value="addTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.deleteByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Login_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ee.demo.Utils.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ee.demo.Utils.Test" />
+      <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserDaoTest" />
+      <option name="METHOD_NAME" value="deleteByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.findByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Login_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ee.demo.Utils.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ee.demo.Utils.Test" />
+      <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserDaoTest" />
+      <option name="METHOD_NAME" value="findByNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.findUserByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Login_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ee.demo.Utils.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ee.demo.Utils.Test" />
+      <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserDaoTest" />
+      <option name="METHOD_NAME" value="findUserByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -366,21 +537,6 @@
       <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserDaoTest" />
       <option name="METHOD_NAME" value="findallTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Login_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ee.demo.Utils.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ee.demo.Utils.Test" />
-      <option name="MAIN_CLASS_NAME" value="ee.demo.Utils.Test.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -607,62 +763,23 @@
         </option>
       </method>
     </configuration>
-    <configuration name="list.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/list.html" />
-      <deployment>
-        <artifact name="Login_demo:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/Login_demo_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="list_html_Java-web-learning" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Login_demo:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="JUnit.UserServiceTest" />
+      <item itemvalue="JUnit.UserDaoTest.addTest" />
+      <item itemvalue="JUnit.UserDaoTest.findallTest" />
+      <item itemvalue="JUnit.UserDaoTest.deleteByIdTest" />
+      <item itemvalue="JUnit.UserDaoTest.findByNameTest" />
+      <item itemvalue="JUnit.UserDaoTest.findUserByIdTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.31" />
       <item itemvalue="Tomcat Server.Tomcat_demo" />
       <item itemvalue="Tomcat Server.Tomcat_1" />
-      <item itemvalue="Tomcat Server.list.html" />
-      <item itemvalue="JUnit.UserDaoTest.addTest" />
-      <item itemvalue="JUnit.UserDaoTest.findallTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.findUserByIdTest" />
         <item itemvalue="JUnit.UserDaoTest.findallTest" />
+        <item itemvalue="JUnit.UserDaoTest.deleteByIdTest" />
+        <item itemvalue="JUnit.UserDaoTest.findByNameTest" />
         <item itemvalue="JUnit.UserDaoTest.addTest" />
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="Tomcat Server.list.html" />
       </list>
     </recent_temporary>
   </component>
@@ -682,7 +799,7 @@
       <workItem from="1575597291266" duration="14570000" />
       <workItem from="1575879691909" duration="7903000" />
       <workItem from="1575945609319" duration="13934000" />
-      <workItem from="1576027612733" duration="15558000" />
+      <workItem from="1576027612733" duration="25144000" />
     </task>
     <task id="LOCAL-00001" summary=":star: re-construct updated">
       <created>1575530625299</created>
@@ -719,43 +836,50 @@
       <option name="project" value="LOCAL" />
       <updated>1576027953831</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=":star: practice updated">
+      <created>1576058484306</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576058484306</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest - 2019.12.10 at 15h 54m 31s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2019.12.11 at 15h 53m 15s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2019.12.11 at 16h 00m 07s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2019.12.11 at 16h 06m 49s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2019.12.11 at 16h 50m 42s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_addTest - 2019.12.11 at 17h 28m 29s.xml">
-      <configuration name="UserDaoTest.addTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_addTest - 2019.12.11 at 17h 30m 29s.xml">
-      <configuration name="UserDaoTest.addTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_addTest - 2019.12.11 at 17h 32m 45s.xml">
-      <configuration name="UserDaoTest.addTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 17h 33m 03s.xml">
+    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 20h 33m 32s.xml">
       <configuration name="UserDaoTest.findallTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 17h 34m 14s.xml">
+    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 20h 33m 36s.xml">
       <configuration name="UserDaoTest.findallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 20h 33m 54s.xml">
+      <configuration name="UserDaoTest.findallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_deleteByIdTest - 2019.12.11 at 20h 34m 13s.xml">
+      <configuration name="UserDaoTest.deleteByIdTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 20h 34m 20s.xml">
+      <configuration name="UserDaoTest.findallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_deleteByIdTest - 2019.12.11 at 20h 34m 35s.xml">
+      <configuration name="UserDaoTest.deleteByIdTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 20h 34m 43s.xml">
+      <configuration name="UserDaoTest.findallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findallTest - 2019.12.11 at 20h 36m 30s.xml">
+      <configuration name="UserDaoTest.findallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserByIdTest - 2019.12.11 at 21h 38m 35s.xml">
+      <configuration name="UserDaoTest.findUserByIdTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserByIdTest - 2019.12.11 at 22h 19m 38s.xml">
+      <configuration name="UserDaoTest.findUserByIdTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78625000" />
+    <option name="totallyTimeSpent" value="88211000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -769,16 +893,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.858864" visible="true" weight="0.27685326" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84782606" visible="true" weight="0.29954615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.14113598" side_tool="true" weight="0.27685326" />
+      <window_info id="Web" order="2" sideWeight="0.1521739" side_tool="true" weight="0.21785174" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40191388" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.073365234" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.22488038" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3125997" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.11642743" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1754386" />
@@ -789,7 +913,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32854864" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.22488038" />
-      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32854864" />
+      <window_info active="true" anchor="bottom" id="Application Servers" order="14" visible="true" weight="0.32854864" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32854864" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -800,16 +924,16 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.858864" visible="true" weight="0.27685326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84782606" visible="true" weight="0.29954615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.14113598" side_tool="true" visible="true" weight="0.27685326" />
+      <window_info id="Web" order="2" sideWeight="0.1521739" side_tool="true" weight="0.21785174" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40191388" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.073365234" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.67783093" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22807017" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.11642743" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1754386" />
@@ -842,28 +966,6 @@
     <option name="LAST_COMMIT_MESSAGE" value=":star: practice updated" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/list.html" />
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/index.html" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Login_demo_war_exploded/css/bootstrap-theme.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/update.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/update.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Login_demo_war_exploded/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16297">
-          <caret line="4" column="690" selection-start-line="4" selection-start-column="690" selection-end-line="4" selection-end-column="690" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/Login_demo_war_exploded/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -936,13 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="45" column="60" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DelSelectedServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1074,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/Login_demo/web/WEB-INF/libs/spring-core-5.0.0.RELEASE.jar!/org/springframework/util/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -1131,54 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/AddUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1186,50 +1226,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/LoginProServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        <state relative-caret-position="243">
+          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/web/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DelSelectedServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/web/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/DeleteUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/FindUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/login.jsp">
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        <state relative-caret-position="417">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/web/add.jsp">
+    <entry file="file://$PROJECT_DIR$/Login_demo/web/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="289">
+          <caret line="112" column="38" lean-forward="true" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="336">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/LoginProServlet.java">
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+        <state relative-caret-position="-768">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Web/UpdateUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="45" />
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login_demo/web/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

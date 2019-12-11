@@ -7,6 +7,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import javax.management.RuntimeErrorException;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
@@ -25,11 +26,13 @@ public class UserDaoImpl implements UserDao {
             return null;
         }
     }
+
     @Override
     public User findByNameAndPassword(User loginUser) {
         try {
-            String sql = "SELECT * FROM user where username = ? and password = ?";
-            User user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), loginUser.getUsername(),
+            String sql = "SELECT * FROM user WHERE username = ? AND password = ?";
+            User user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class),
+                    loginUser.getUsername(),
                     loginUser.getPassword());
             return user;
         } catch (DataAccessException e) {
@@ -42,13 +45,48 @@ public class UserDaoImpl implements UserDao {
     @Override
     public void add(User user) {
         try {
-            String sql = "INSERT INTO user values(null,?,?,?,?,?,?,null,null)";   //必须按照数据库表设计的顺序添加
-            template.update(sql,user.getName(),user.getGender(),user.getAge(),user.getAddress(),user.getQq(),
+            String sql = "INSERT INTO user VALUES(null,?,?,?,?,?,?,null,null)";   //必须按照数据库表设计的顺序添加
+            template.update(sql, user.getName(), user.getGender(), user.getAge(), user.getAddress(), user.getQq(),
                     user.getEmail());
 //            System.out.println("添加用户成功!");
         } catch (DataAccessException e) {
             e.printStackTrace();
             System.out.println("添加记录失败!");
+        }
+    }
+
+    @Override
+    public void deleteById(int id) {
+        try {
+            String sql = "DELETE FROM user WHERE id = ?";
+            template.update(sql, id);
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+            System.out.println("删除失败");
+        }
+    }
+
+    @Override
+    public User findUserById(int id) {
+        try {
+            String sql = "SELECT * FROM user WHERE id = ?";
+            User user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), id);
+            return user;
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public void update(User user) {
+        try {
+            String sql = "UPDATE user SET name = ? , gender = ?, age = ?,address = ?,qq = ?, email = ? WHERE id = ?";
+            template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),user.getName(), user.getGender(), user.getAge(), user.getAddress(), user.getQq(),
+                    user.getEmail(),user.getId());
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+            System.out.println("查询失败");
         }
     }
 }
