@@ -9,13 +9,6 @@
     <list default="true" id="e9a054b5-f365-47c6-a7aa-26c6d6f5750d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Utils/Test/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/FindUserByPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/FindUserByPageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/src/ee/demo/Web/UserListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_demo/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Login_demo/web/list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2528">
-              <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
+            <state relative-caret-position="1843">
+              <caret line="194" column="34" selection-start-line="194" selection-start-column="34" selection-end-line="194" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -742,7 +735,7 @@
       <workItem from="1576027612733" duration="25144000" />
       <workItem from="1576074395516" duration="137000" />
       <workItem from="1576115070541" duration="18257000" />
-      <workItem from="1576205908628" duration="15429000" />
+      <workItem from="1576205908628" duration="15674000" />
     </task>
     <task id="LOCAL-00001" summary=":star: re-construct updated">
       <created>1575530625299</created>
@@ -800,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576206847215</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":star: practice pro All Done">
+      <created>1576226497573</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576226497573</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -836,7 +836,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122034000" />
+    <option name="totallyTimeSpent" value="122279000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -851,7 +851,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84494776" visible="true" weight="0.24432677" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84494776" visible="true" weight="0.24432677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.15505226" side_tool="true" weight="0.2753404" />
       <window_info id="Designer" order="3" />
@@ -860,7 +860,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40191388" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.72567785" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.11164274" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.04784689" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1754386" />
@@ -922,7 +922,8 @@
     <MESSAGE value=":star:before MVC updated" />
     <MESSAGE value=":star: practice updated" />
     <MESSAGE value=":star: practice pro updated" />
-    <option name="LAST_COMMIT_MESSAGE" value=":star: practice pro updated" />
+    <MESSAGE value=":star: practice pro All Done" />
+    <option name="LAST_COMMIT_MESSAGE" value=":star: practice pro All Done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Login_demo/web/css/bootstrap.min.css">
@@ -1377,8 +1378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Login_demo/src/ee/demo/Dao/Impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2528">
-          <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
+        <state relative-caret-position="1843">
+          <caret line="194" column="34" selection-start-line="194" selection-start-column="34" selection-end-line="194" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

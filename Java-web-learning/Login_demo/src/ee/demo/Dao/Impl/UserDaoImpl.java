@@ -4,6 +4,7 @@ package ee.demo.Dao.Impl;
  * @Author : Garen
  * @Last Updated : 2019/12/13 16:39
  */
+
 import ee.demo.Dao.UserDao;
 import ee.demo.Domain.User;
 import ee.demo.Utils.JDBCUtils;
@@ -20,8 +21,8 @@ public class UserDaoImpl implements UserDao {
     private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
 
     /**
-     * @desciption 所有记录查询
      * @return
+     * @desciption 所有记录查询
      */
     @Override
     public List<User> findAll() {
@@ -37,9 +38,9 @@ public class UserDaoImpl implements UserDao {
     }
 
     /**
-     * @description 管理员用户查询
      * @param loginUser
      * @return
+     * @description 管理员用户查询
      */
     @Override
     public User findByNameAndPassword(User loginUser) {
@@ -51,14 +52,15 @@ public class UserDaoImpl implements UserDao {
             return user;
         } catch (DataAccessException e) {
             e.printStackTrace();
+            System.out.println("查询失败！");
             return null;
         }
 
     }
 
     /**
-     * @description 添加记录
      * @param user
+     * @description 添加记录
      */
     @Override
     public void add(User user) {
@@ -74,8 +76,8 @@ public class UserDaoImpl implements UserDao {
     }
 
     /**
-     * @description 根据id唯一标识 删除记录
      * @param id
+     * @description 根据id唯一标识 删除记录
      */
     @Override
     public void deleteById(int id) {
@@ -89,9 +91,9 @@ public class UserDaoImpl implements UserDao {
     }
 
     /**
-     * @description 根据id查询记录
      * @param id
      * @return
+     * @description 根据id查询记录
      */
     @Override
     public User findUserById(int id) {
@@ -106,8 +108,8 @@ public class UserDaoImpl implements UserDao {
     }
 
     /**
-     * @description 修改记录
      * @param user
+     * @description 修改记录
      */
     @Override
     public void update(User user) {
@@ -136,7 +138,7 @@ public class UserDaoImpl implements UserDao {
             //存储map中的value
             List<Object> condition_value = new ArrayList<Object>();
             for (String key : keySet) {
-                if("currentPage".equals(key)||"row".equals(key)){  //排除无关参数
+                if ("currentPage".equals(key) || "row".equals(key)) {  //排除无关参数
                     continue;
                 }
                 String value = condition.get(key)[0];   //只获取一个值即可
@@ -146,11 +148,9 @@ public class UserDaoImpl implements UserDao {
                 }
             }
             sql = sb.toString();
-            System.out.println(sql);
-            System.out.println(condition_value);
-            int i = template.queryForObject(sql, Integer.class, condition_value.toArray());
-            System.out.println(i);
-            return i; //自动拆箱Integer->int
+//            System.out.println(sql);
+//            System.out.println(condition_value);
+            return template.queryForObject(sql, Integer.class, condition_value.toArray()); //自动拆箱Integer->int
         } catch (Exception e) {
             throw new RuntimeException("计算错误");
         }
@@ -173,7 +173,7 @@ public class UserDaoImpl implements UserDao {
             //存储map中的value
             List<Object> condition_value = new ArrayList<Object>();
             for (String key : keySet) {
-                if("currentPage".equals(key)||"row".equals(key)){  //排除无关参数
+                if ("currentPage".equals(key) || "row".equals(key)) {  //排除无关参数
                     continue;
                 }
                 String value = condition.get(key)[0];   //只获取一个值即可
@@ -186,17 +186,13 @@ public class UserDaoImpl implements UserDao {
             condition_value.add(start);
             condition_value.add(rows);
             sql = sb.toString();
-            System.out.println(sql);
-            System.out.println(condition_value);
             List<User> list = template.query(sql, new BeanPropertyRowMapper<User>(User.class),
                     condition_value.toArray());
-            for (User user : list) {
-                System.out.println(user.toString());
-            }
             return list;
 
         } catch (DataAccessException e) {
             e.printStackTrace();
+            System.out.println("条件查询失败");
             return null;
         }
     }
