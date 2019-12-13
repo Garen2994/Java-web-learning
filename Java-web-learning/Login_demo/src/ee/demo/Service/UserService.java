@@ -4,6 +4,7 @@ import ee.demo.Domain.PageBean;
 import ee.demo.Domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Title : 用户管理业务接口
@@ -22,5 +23,5 @@ public interface UserService {
     public User findUserById(String id);
     public void updateUser(User user);
     public void deleteUser(String[] ids);
-    public PageBean findUserByPage(String currentPage, String row);
+    public PageBean findUserByPage(String currentPage, String row, Map<String, String[]> condition);  //分页条件查询
 }

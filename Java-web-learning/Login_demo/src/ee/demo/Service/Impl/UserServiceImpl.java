@@ -7,6 +7,7 @@ import ee.demo.Domain.User;
 import ee.demo.Service.UserService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Title : 用户管理业务接口的实现类
@@ -54,19 +55,24 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public PageBean findUserByPage(String currentPage, String row) {
+    public PageBean findUserByPage(String currentPage, String row,  Map<String, String[]> condition) {
         int current_page = Integer.parseInt(currentPage);
         int rows = Integer.parseInt(row);
         PageBean<User> pb = new PageBean<User>();
-        pb.setCurrentPage(current_page);
+
         pb.setRow(rows);
-        int totalCount = dao.findTotalCount();
+        int totalCount = dao.findTotalCount(condition);
         pb.setTotalCount(totalCount);
+        int totalPage = (totalCount % rows) == 0 ? totalCount/rows : (totalCount/rows) + 1;
+        if(current_page > totalPage){
+            current_page = totalPage;
+        }
+        pb.setTotalPage(totalPage);
+        pb.setCurrentPage(current_page);
 
         int start = (current_page - 1) * rows;
-        List<User> userList = dao.findUserByPage(start, rows);
+        List<User> userList = dao.findUserByPage(start, rows, condition);
         pb.setList(userList);
-        pb.setTotalPage((totalCount % rows) == 0 ? totalCount/rows : (totalCount/rows) + 1);
         return pb;
     }
 }

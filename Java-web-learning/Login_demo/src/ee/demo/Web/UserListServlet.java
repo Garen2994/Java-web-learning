@@ -18,7 +18,9 @@ public class UserListServlet extends HttpServlet {
         UserService service = new UserServiceImpl();   // Servlet use the service layer
         List<User> users = service.findAll();
         request.setAttribute("users",users);   //store the result list to request domain
-        request.getRequestDispatcher("/list.jsp").forward(request,response);  //forword the result list to list.jsp page
+        request.getRequestDispatcher("/FindUserByPageServlet").forward(request,response);  //forword the result
+        // list to
+        // list.jsp page
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

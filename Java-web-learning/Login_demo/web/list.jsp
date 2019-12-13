@@ -77,6 +77,7 @@
         <form class="form-inline" action="${pageContext.request.contextPath}/FindUserByPageServlet" method="post">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
+                <%--回显查询条件--%>
                 <input type="text" name="name" value="${condition.name[0]}" class="form-control" id="exampleInputName2">
             </div>
             <div class="form-group">
@@ -99,6 +100,7 @@
     </div>
     <%--将复选框加入到表单中自动提交--%>
     <form id="form" action="${pageContext.request.contextPath}/DelSelectedServlet" method="post">
+
         <table border="1" class="table table-bordered table-hover">
             <tr class="success">
                 <th><input type="checkbox" id="firstCB"></th>
@@ -136,13 +138,13 @@
             <ul class="pagination">
                 <%--         判断当前页码是否为null，rows是否为null--%>
                 <c:if test="${pb.currentPage == 1}">
-                    <li class="disabled">
-                        </c:if>
+                <li class="disabled">
+                    </c:if>
                     <c:if test="${pb.currentPage != 1}">
                 <li></c:if>
 
                     <a href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${pb.currentPage -
-                    1}&row=2&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
+                    1}&row=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
                        aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
@@ -152,18 +154,24 @@
 
                     <c:if test="${pb.currentPage == i}">
                         <li class="active"><a
-                                href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${i}&row=2&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
+                                href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${i}&row=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
                         </li>
                     </c:if>
                     <c:if test="${pb.currentPage != i }">
                         <li><a
-                                href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${i}&row=2&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
+                                href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${i}&row=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
                         </li>
                     </c:if>
                 </c:forEach>
-                <li>
+
+                <c:if test="${pb.currentPage == pb.totalPage}">
+                <li class="disabled">
+                    </c:if>
+                    <c:if test="${pb.currentPage != pb.totalPage}">
+                <li></c:if>
+                    <%--把查询条件全部拼接到地址中--%>
                     <a href="${pageContext.request.contextPath}/FindUserByPageServlet?currentPage=${pb.currentPage +
-                    1}&row=2&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
+                    1}&row=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
                        aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>

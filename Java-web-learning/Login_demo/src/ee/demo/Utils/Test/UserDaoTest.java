@@ -6,6 +6,7 @@ import ee.demo.Domain.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Title : UserDao Test
@@ -34,10 +35,10 @@ public class UserDaoTest {
     @Test
     public void addTest(){
         User user = new User();
-        user.setName("Garen");
+        user.setName("Kendall Jenner");
         user.setGender("女");
-        user.setAge(23);
-        user.setAddress("英国");
+        user.setAge(26);
+        user.setAddress("美国");
         user.setQq("1721864383");
         user.setEmail("garen2994@hotmail.com");
         UserDao dao = new UserDaoImpl();
@@ -73,18 +74,4 @@ public class UserDaoTest {
         dao.update(user);
     }
 
-    @Test
-    public void totalCountTest(){
-        UserDaoImpl dao = new UserDaoImpl();
-        int totalCount = dao.findTotalCount();
-        System.out.println(totalCount);
-    }
-    @Test
-    public void findByPageTest(){
-        UserDaoImpl dao = new UserDaoImpl();
-        List<User> list = dao.findUserByPage(1, 2);
-        for (User user : list) {
-            System.out.println(user.toString());
-        }
-    }
 }
