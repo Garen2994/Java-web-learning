@@ -1,5 +1,6 @@
 package ee.demo.Service;
 
+import ee.demo.Domain.PageBean;
 import ee.demo.Domain.User;
 
 import java.util.List;
@@ -20,4 +21,6 @@ public interface UserService {
     public void deleteUser(String id);
     public User findUserById(String id);
     public void updateUser(User user);
+    public void deleteUser(String[] ids);
+    public PageBean findUserByPage(String currentPage, String row);
 }

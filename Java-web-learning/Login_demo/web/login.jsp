@@ -38,17 +38,19 @@
     <form action="${pageContext.request.contextPath}/LoginProServlet" method="post">
         <div class="form-group">
             <label for="user">用户名：</label>
-            <input type="text" name="username" class="form-control" id="user" placeholder="请输入用户名"/>
+            <input type="text" name="username" class="form-control" id="user" placeholder="请输入用户名" autocomplete="off"/>
         </div>
 
         <div class="form-group">
             <label for="password">密码：</label>
-            <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码"/>
+            <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码"
+                   autocomplete="off"/>
         </div>
 
         <div class="form-inline">
             <label for="vcode">验证码：</label>
-            <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码" style="width: 120px;"/>
+            <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码"
+                   style="width: 120px;" autocomplete="off"/>
             <a href="javascript:refreshCode();">
                 <img src="${pageContext.request.contextPath}/RandomCodeServlet" title="看不清点击刷新" id="vcode"/>
             </a>

@@ -7,7 +7,6 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import javax.management.RuntimeErrorException;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
@@ -82,11 +81,46 @@ public class UserDaoImpl implements UserDao {
     public void update(User user) {
         try {
             String sql = "UPDATE user SET name = ? , gender = ?, age = ?,address = ?,qq = ?, email = ? WHERE id = ?";
-            template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),user.getName(), user.getGender(), user.getAge(), user.getAddress(), user.getQq(),
-                    user.getEmail(),user.getId());
+            template.update(sql, user.getName(), user.getGender(), user.getAge(), user.getAddress(), user.getQq(),
+                    user.getEmail(), user.getId());
         } catch (DataAccessException e) {
             e.printStackTrace();
-            System.out.println("查询失败");
+            System.out.println("修改失败");
         }
     }
+
+    /**
+     * @return
+     * @description
+     */
+    @Override
+    public int findTotalCount() {
+        try {
+            String sql = "SELECT count(*) FROM user";
+            Integer totalCount = template.queryForObject(sql, Integer.class);   //自动拆箱Integer->int
+            return totalCount;
+        } catch (Exception e) {
+            throw new RuntimeException("计算错误");
+        }
+    }
+
+    /**
+     * @param start
+     * @param rows
+     * @return
+     * @description 分页查询每页记录
+     */
+    @Override
+    public List<User> findUserByPage(int start, int rows) {
+        try {
+            String sql = "SELECT *FROM user LIMIT ? , ?";
+            List<User> userList = template.query(sql, new BeanPropertyRowMapper<User>(User.class), start, rows);
+            return userList;
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
 }

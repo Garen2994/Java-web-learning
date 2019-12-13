@@ -18,4 +18,7 @@ public interface UserDao {
     public void deleteById(int id);
     public User findUserById(int id);
     public void update(User user);
+    public int findTotalCount();
+    public List<User> findUserByPage(int start, int rows);
+
 }

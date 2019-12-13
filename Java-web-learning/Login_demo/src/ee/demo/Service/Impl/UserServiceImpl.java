@@ -2,6 +2,7 @@ package ee.demo.Service.Impl;
 
 import ee.demo.Dao.Impl.UserDaoImpl;
 import ee.demo.Dao.UserDao;
+import ee.demo.Domain.PageBean;
 import ee.demo.Domain.User;
 import ee.demo.Service.UserService;
 
@@ -42,6 +43,30 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(User user) {
-       dao.update(user);
+        dao.update(user);
+    }
+
+    @Override
+    public void deleteUser(String[] ids) {
+        for (String id : ids) {
+            dao.deleteById(Integer.parseInt(id));
+        }
+    }
+
+    @Override
+    public PageBean findUserByPage(String currentPage, String row) {
+        int current_page = Integer.parseInt(currentPage);
+        int rows = Integer.parseInt(row);
+        PageBean<User> pb = new PageBean<User>();
+        pb.setCurrentPage(current_page);
+        pb.setRow(rows);
+        int totalCount = dao.findTotalCount();
+        pb.setTotalCount(totalCount);
+
+        int start = (current_page - 1) * rows;
+        List<User> userList = dao.findUserByPage(start, rows);
+        pb.setList(userList);
+        pb.setTotalPage((totalCount % rows) == 0 ? totalCount/rows : (totalCount/rows) + 1);
+        return pb;
     }
 }

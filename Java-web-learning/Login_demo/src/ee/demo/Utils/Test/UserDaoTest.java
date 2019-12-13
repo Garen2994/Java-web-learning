@@ -56,4 +56,35 @@ public class UserDaoTest {
         User user = dao.findUserById(id);
         System.out.println(user.toString());
     }
+
+    @Test
+    public void updateTest(){
+        User user = new User();
+        user.setName("Skylar");
+        user.setGender("女");
+        user.setAge(29);
+        user.setAddress("美国");
+        user.setQq("123456789");
+        user.setEmail("skylar@gmail.com");
+        user.setUsername("grey456");
+        user.setPassword("123456");
+        user.setId(2);
+        UserDaoImpl dao = new UserDaoImpl();
+        dao.update(user);
+    }
+
+    @Test
+    public void totalCountTest(){
+        UserDaoImpl dao = new UserDaoImpl();
+        int totalCount = dao.findTotalCount();
+        System.out.println(totalCount);
+    }
+    @Test
+    public void findByPageTest(){
+        UserDaoImpl dao = new UserDaoImpl();
+        List<User> list = dao.findUserByPage(1, 2);
+        for (User user : list) {
+            System.out.println(user.toString());
+        }
+    }
 }
