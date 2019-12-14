@@ -3,7 +3,7 @@ package ee.demo.Servlet;
         import javax.servlet.*;
         import javax.servlet.annotation.WebServlet;
         import java.io.IOException;
-@WebServlet("/demo1")
+@WebServlet("/user/demo1")
 public class ServletDemo1 implements Servlet {
     public ServletDemo1() {
     }
@@ -11,7 +11,6 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        System.out.println("init...");
     }
 
     /**
@@ -39,6 +38,6 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void destroy() {
-        System.out.println("Destroy...");
+
     }
 }

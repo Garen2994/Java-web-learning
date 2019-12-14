@@ -11,27 +11,6 @@
   <title>Garen's Tomcat Test</title>
 </head>
 <body>
-<h1 align="center" color="#000000">Name: Garen</h1>
-<form>
-  <table align="center">
-    <tr>
-      <th>Name</th>
-      <th>Indentical</th>
-    </tr>
-    <tr>
-      <td> Ariana</td>
-      <td>A singer</td>
-    </tr>
-    <tr>
-      <td>Skylar</td>
-      <td>VIP</td>
-    </tr>
-    <tr>
-      <td>Right here right now!!</td>
-      <td>Normal client</td>
-    </tr>
-
-  </table>
-</form>
+index.jsp ...
 </body>
 </html>
