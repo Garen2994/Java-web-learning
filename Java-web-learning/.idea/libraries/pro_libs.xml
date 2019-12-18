@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="pro_libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/JedisDemo/web/WEB-INF/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/JedisDemo/web/WEB-INF/libs" recursive="false" />
+  </library>
+</component>

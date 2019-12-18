@@ -16,18 +16,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="libs" level="project" />
+    <orderEntry type="library" exported="" name="libs_2" level="project" />
+    <orderEntry type="library" exported="" name="pro_libs" level="project" />
+    <orderEntry type="library" exported="" name="redis" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 8.5.31" level="application_server_libraries" />
-    <orderEntry type="module-library" exported="">
-      <library name="libs(1)">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/web/WEB-INF/libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/libs" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="JUnit5.3">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../lib/junit-jupiter-api-5.6.0-M1.jar!/" />
@@ -37,16 +31,6 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library name="lib">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/web/WEB-INF/libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/libs" recursive="false" />
       </library>
     </orderEntry>
   </component>
