@@ -1,7 +1,5 @@
 package db.redis.ProvinceCase.Web;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import db.redis.ProvinceCase.Domain.Province;
 import db.redis.ProvinceCase.Service.Impl.ProvinceServiceImpl;
 import db.redis.ProvinceCase.Service.ProvinceService;
 
@@ -11,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 @WebServlet("/FindProvinceServlet")
 public class FindProvinceServlet extends HttpServlet {
