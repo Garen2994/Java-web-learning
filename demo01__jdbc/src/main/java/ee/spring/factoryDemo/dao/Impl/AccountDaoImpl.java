@@ -1,4 +1,8 @@
 package ee.spring.factoryDemo.dao.Impl;
 
-public class AccountDaoImpl {
+import ee.spring.factoryDemo.dao.AccountDao;
+
+public class AccountDaoImpl implements AccountDao {
+    public void saveAccount() {
+    }
 }

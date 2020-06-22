@@ -1,4 +1,5 @@
 package ee.spring.factoryDemo.dao;
 
-public class AccountDao {
+public interface AccountDao {
+    public void saveAccount();
 }

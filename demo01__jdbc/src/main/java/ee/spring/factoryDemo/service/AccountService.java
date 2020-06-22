@@ -1,4 +1,5 @@
 package ee.spring.factoryDemo.service;
 
-public class AccountService {
+public interface AccountService {
+    public void saveAccount();
 }

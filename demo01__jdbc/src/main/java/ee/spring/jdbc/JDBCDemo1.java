@@ -1,3 +1,5 @@
+package ee.spring.jdbc;
+
 import java.sql.*;
 
 /**

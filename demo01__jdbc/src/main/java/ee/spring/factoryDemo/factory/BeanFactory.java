@@ -1,7 +1,9 @@
-package ee.spring.factoryDemo;
+package ee.spring.factoryDemo.factory;
 
-import java.io.IOException;
 import java.io.InputStream;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 /**
  * 一个创建Bean对象的工厂
@@ -17,25 +19,33 @@ import java.util.Properties;
  *   我的配置文件可以是xml也可以是properties
  */
 public class BeanFactory {
-    private static Properties pro;
+    private static Map<String,Object> beans;
+    private static Properties props;
     static{
         try {
-            InputStream is = BeanFactory.class.getClassLoader().getResourceAsStream("info.properties");
-            pro = new Properties();
-            pro.load(is);
-        } catch (IOException e) {
+            InputStream is = BeanFactory.class.getClassLoader().getResourceAsStream("Bean.properties");
+            props = new Properties();
+            props.load(is);
+            beans = new HashMap<String,Object>();
+            Enumeration<Object> keys = props.keys();
+
+            //遍历枚举
+            while (keys.hasMoreElements()) {
+                String key = keys.nextElement().toString();
+                String beanPath = props.getProperty(key);
+                Object value = Class.forName(beanPath).getDeclaredConstructor().newInstance();  //反射的方式创建对象
+            }
+        } catch (Exception e) {
             throw new ExceptionInInitializerError("初始化properties失败!");
         }
     }
 
+    /**
+     * @description 根据Bean的名称获取对象
+     * @param beanName
+     * @return
+     */
     public static Object getBean(String beanName){
-        Object bean = null;
-        try {
-            String beanPath = pro.getProperty(beanName);
-            bean = Class.forName(beanPath).getDeclaredConstructor().newInstance();  //反射的方式创建对象
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return bean;
+        return beans.get(beanName);
     }
 }
